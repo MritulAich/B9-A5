@@ -1,24 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy your ticket</title>
     <!--css framework link  -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
-<link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="style.css">
     <!--raleway font link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1 class="text-6xl font-extrabold">End-to-End Travel with P Paribahan</h1>
+    <header class="px-32 pt-12">
+        <nav class="flex flex-row justify-between">
+            <h2 class="text-4xl font-extrabold">Buy your ticket</h2>
+            <button class="flex flex-row border rounded-xl bg-[#1DD100] bg-opacity-10 p-4"><span
+                    class="pr-2 text-[#1DD100] font-bold">Bus</span><img src="./images/bus-icon.png"></button>
+        </nav>
+        <!-- banner -->
+        <div class="hero min-h-screen rounded-3xl mt-8 pt-16 pb-32" style="background-image: url(./images/banner.png);">
+            <div class="hero-content text-center ">
+              <div class="">
+                <h1 class="text-white text-6xl font-extrabold leading-[86px]">End-to-End Travel with <br><span class="text-[#1DD100]">Easy
+                    Paribahan</span></h1>
+                <p class="text-white mt-4 mb-8">Welcome to our website. You can discover whole Easy Paribahan here. Choose<br>
+                    your destination and buy ticket.</p>
+                <button class="btn bg-[#1DD100] font-bold">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+        <!-- offers -->
+        <section class="flex flex-col items-center">
+            <h2 class="pt-28 pb-12 font-bold text-4xl">Best offers for you</h2>
 
- <script src="/JS/utility.js"></script>   
- <script src="/JS/script.js"></script>   
+            <div class="flex flex-row gap-6">
+                <div class="card bg-[#FFBF0F] flex flex-row ">
+                    <div class="card-body text-[#030712]">
+                        <h2 class="opacity-80 text-4xl font-black">15% OFF</h2>
+                        <p class="opacity-80 text-2xl font-semibold">on your next purchase</p>
+                        <p class="opacity-50 text-xl font-medium">use by January 2024</p>
+                    </div>
+                    <img class="" src="./images/cupon-devider.png">
+                    <div class="text-[#030712] pl-6 py-16 pr-12">
+                        <h2 class="text-3xl font-bold">NEW15</h2>
+                        <p class="text-xl opacity-40 font-medium">Coupon Code</p>
+                    </div>
+                </div>
+
+                <div class="card bg-[#F78C9C] flex flex-row">
+                    <div class="card-body text-[#030712]">
+                        <h2 class="opacity-80 text-4xl font-black">20% OFF</h2>
+                        <p class="opacity-80 text-2xl font-semibold">on your next purchase</p>
+                        <p class="opacity-50 text-xl font-medium">use by January 2024</p>
+                    </div>
+                    <img class="" src="./images/cupon-devider.png">
+                    <div class="text-[#030712] pl-6 py-16 pr-12">
+                        <h2 class="text-3xl font-bold">Couple 20</h2>
+                        <p class="text-xl opacity-40 font-medium">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-outline btn-success mt-16 mb-32">See All Offers</button>
+        </section>
+        
+    </main>
+    <script src="/JS/utility.js"></script>
+    <script src="/JS/script.js"></script>
 </body>
+
 </html>
