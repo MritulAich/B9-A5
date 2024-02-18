@@ -130,8 +130,8 @@
             </div>
 
             <!-- select your seat -->
-            <div class="grid grid-cols-2 bg-white rounded-3xl p-8 mt-6">
-                <div class="">
+            <div class="grid grid-cols-2 gap-16 bg-white rounded-3xl p-8 my-8">
+                <div>
 
                     <h2 class="text-2xl font-semibold">Select Your Seat</h2>
                     <hr class="border-dashed my-6">
@@ -144,19 +144,116 @@
                         </div>
                     </div>
                     <hr class="border-dashed my-6">
-                    <div class="flex justify-end">
+                    <div class="flex justify-end pb-6">
                         <img class="border rounded-xl px-8 py-3 bg-[#F7F8F8]"
                             src="./images/tabler-icon-steering-wheel.svg">
                     </div>
 
-                   
+                    <div class="flex flex-row items-center pb-6">
+                        <p>A</p>
+                        <div class="flex flex-row gap-8 mr-16 ml-6">
+                            <button class="btn">A1</button>
+                            <button class="btn">A2</button>
+                        </div>
+                        <div class="flex flex-row gap-8">
+                            <button class="btn">A3</button>
+                            <button class="btn">A4</button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row items-center">
+                        <p>B</p>
+                        <div class="flex flex-row gap-8 mr-16 ml-6">
+                            <button class="btn">B1</button>
+                            <button class="btn">B2</button>
+                        </div>
+                        <div class="flex flex-row gap-8">
+                            <button class="btn">B3</button>
+                            <button class="btn">B4</button>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class=""></div>
-            </div>
+                <div>
+                    <h2 class="text-2xl font-semibold">Select Your Seat</h2>
+                    <hr class="border-dashed my-6">
+                    <div class="bg-[#F7F8F8] rounded-xl p-4 mb-4">
+                        <div class="font-medium flex justify-between">
+                            <p>Seat <span class="text-[#1DD100]">2</span></p>
+                            <p>Class</p>
+                            <p>Price</p>
+                        </div>
+                        <hr class="border-dashed my-3">
+                        <div class=" flex justify-between">
+                            <p>A1</p>
+                            <p>Economy</p>
+                            <p>550</p>
+                        </div>
+                        <hr class="border-dashed my-3">
+                        <div class=" flex justify-between">
+                            <p>A2</p>
+                            <p>Economy</p>
+                            <p>550</p>
+                        </div>
+                        <hr class="border my-3">
+                        <!--  -->
+                        <div class="hidden flex justify-between">
+                            <p>B1</p>
+                            <p>Economy</p>
+                            <p>550</p>
+                        </div>
+                        <hr class="border my-3 ">
+                        <div class="hidden flex justify-between">
+                            <p>B2</p>
+                            <p>Economy</p>
+                            <p>550</p>
+                        </div>
 
+                        <hr class="border my-3">
+                        <div class="flex justify-between">
+                            <h2 class="font-medium">Total Price</h2>
+                            <h2 class="font-medium">BDT <span>0</span></h2>
+                        </div>
+                        <label class="input input-bordered flex items-center gap-2 my-3">
+                            <input type="text" class="grow" placeholder="Have any coupon?" />
+                            <button class="btn bg-[#1DD100] text-white">Apply</button>
+                        </label>
+                        <div class="flex justify-between">
+                            <h2 class="font-medium">Grand Total</h2>
+                            <h2 class="font-medium">BDT <span>0</span></h2>
+                        </div>
+                    </div>
+                    <p class="font-semibold">Passenger Name*</p>
+                    <input type="text" placeholder="Enter your name"
+                        class="input input-bordered w-full max-w-xs my-4" />
+                    <p class="font-semibold">Phone Number*</p>
+                    <input type="text" placeholder="Enter your phone number"
+                        class="input input-bordered w-full max-w-xs my-4" />
+                    <p class="font-semibold">Email ID</p>
+                    <input type="text" placeholder="Enter your email id"
+                        class="input input-bordered w-full max-w-xs my-4" />
+                    <button class="btn bg-[#1DD100] text-white text-center w-80">Next</button>
+                    <div class="flex flex-row">
+                        <a href="" class="m-3">Terms and Conditions</a>
+                        <a href="" class="m-3">Cancellation Policy</a>
+                    </div>
+                </div>
+            </div>
         </section>
+
     </main>
+    <footer class="footer p-10 bg-black text-neutral-content flex justify-around">
+        <div>
+          <h1 class="text-4xl font-extrabold text-white">Buy Your Ticket</h1>
+          <p>Buy Your Ticket is a digital platform to make your daily commuting better.</p>
+        </div> 
+        <div>
+          <h6 class="footer-title text-white">Download our app</h6> 
+          <img src="./images/play store.svg">
+        </div>
+      </footer>
+
     <script src="/JS/utility.js"></script>
     <script src="/JS/script.js"></script>
 </body>
