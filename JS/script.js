@@ -39,35 +39,70 @@ function A1() {
     const appendData = document.getElementById('a1');
     appendData.classList.remove('hidden');
 
+    const btnCondition = document.getElementById('nextBtn');
+    btnCondition.classList.remove('btn-disabled');
 }
+
 function A2() {
     const appendData = document.getElementById('a2');
     appendData.classList.remove('hidden');
+
+    const btnCondition = document.getElementById('nextBtn');
+    btnCondition.classList.remove('btn-disabled');
 }
 function A3() {
     const appendData = document.getElementById('a3');
     appendData.classList.remove('hidden');
+
+    const btnCondition = document.getElementById('nextBtn');
+    btnCondition.classList.remove('btn-disabled');
 }
 function A4() {
     const appendData = document.getElementById('a4');
     appendData.classList.remove('hidden');
+
+    const btnCondition = document.getElementById('nextBtn');
+    btnCondition.classList.remove('btn-disabled');
 }
 function B1() {
     const appendData = document.getElementById('b1');
     appendData.classList.remove('hidden');
+
+    const btnCondition = document.getElementById('nextBtn');
+    btnCondition.classList.remove('btn-disabled');
 }
 function B2() {
     const appendData = document.getElementById('b2');
     appendData.classList.remove('hidden');
+
+    const btnCondition = document.getElementById('nextBtn');
+    btnCondition.classList.remove('btn-disabled');
 }
 function B3() {
     const appendData = document.getElementById('b3');
     appendData.classList.remove('hidden');
+
+    const btnCondition = document.getElementById('nextBtn');
+    btnCondition.classList.remove('btn-disabled');
 }
 function B4() {
     const appendData = document.getElementById('b4');
     appendData.classList.remove('hidden');
+
+    const btnCondition = document.getElementById('nextBtn');
+    btnCondition.classList.remove('btn-disabled');
 }
 
 
+const phoneNumber = document.getElementById('phoneNum');
+const btnCondition = document.getElementById('nextBtn');
 
+function showNextBtn() {
+    if (phoneNumber.value !== '') {
+        btnCondition.classList.remove('btn-disabled')
+    }
+    else {
+        btnCondition.classList.add('btn-disabled')
+    }
+}
+phoneNumber.addEventListener('input', showNextBtn, A1);

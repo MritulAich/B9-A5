@@ -248,14 +248,16 @@
                     <p class="font-semibold text-[#030712]">Passenger Name*</p>
                     <input type="text" placeholder="Enter your name"
                         class="input input-bordered w-full max-w-xs my-4" />
-                    <p class="font-semibold text-[#030712]">Phone Number*</p>
-                    <input type="number" placeholder="Enter your phone number"
+
+                    <p class="font-semibold text-[#030712]" >Phone Number*</p>
+                    <input id="phoneNum" type="number" placeholder="Enter your phone number"
                         class="input input-bordered w-full max-w-xs my-4" />
+
                     <p class="font-semibold text-[#030712]">Email ID</p>
                     <input type="email" placeholder="Enter your email id"
                         class="input input-bordered w-full max-w-xs my-4" />
                     <button onclick="my_modal_2.showModal()"
-                        class="btn bg-[#1DD100] text-white text-center w-80">Next</button>
+                        id="nextBtn" class="btn btn-disabled bg-[#1DD100] text-white text-center w-80">Next</button>
                     <div class="flex flex-row">
                         <a href="" class="m-3">Terms and Conditions</a>
                         <a href="" class="m-3">Cancellation Policy</a>
@@ -272,7 +274,7 @@
                 <h3 class="font-bold text-lg text-[#27AE60]">SUCCESS</h3>
                 <p class="py-4">Thank you for Booking Our Bus Seats.
                     We are working hard to find the best service and deals for you.</p>
-                <p>Press Esc to return</p>
+                <p class="font-bold">Press Escape to return</p>
                 <a href="#header"><button class="btn bg-[#27AE60] text-white">Continue</button></a>
             </div>
         </dialog>
